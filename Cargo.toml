@@ -17,7 +17,7 @@ serum_dex = { git = "https://github.com/openbook-dex/program.git", default-featu
 mango-feeds-connector = "0.2.1"
 
 # 1.16.7+ is required due to this: https://github.com/blockworks-foundation/mango-v4/issues/712
-solana-address-lookup-table-program = "1.16.7"
+solana-address-lookup-table-program = "1.17.1"
 solana-account-decoder = "~1.17.1"
 solana-client = "~1.17.1"
 solana-logger = "~1.17.1"
