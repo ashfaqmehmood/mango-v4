@@ -17,15 +17,17 @@ serum_dex = { git = "https://github.com/openbook-dex/program.git", default-featu
 mango-feeds-connector = "0.2.1"
 
 # 1.16.7+ is required due to this: https://github.com/blockworks-foundation/mango-v4/issues/712
-solana-address-lookup-table-program = "~1.16.7"
-solana-account-decoder = "~1.16.7"
-solana-client = "~1.16.7"
-solana-logger = "~1.16.7"
-solana-program = "~1.16.7"
-solana-program-test = "~1.16.7"
-solana-rpc = "~1.16.7"
-solana-sdk = { version = "~1.16.7", default-features = false }
-solana-transaction-status = { version = "~1.16.7" }
+[patch.crates-io]
+solana-address-lookup-table-program = { version = "1.16.7" }
+solana-account-decoder = { version = "1.16.7" }
+solana-client = { version = "1.16.7" }
+solana-logger = { version = "1.16.7" }
+solana-program = { version = "1.16.7" }
+solana-program-test = { version = "1.16.7" }
+solana-rpc = { version = "1.16.7" }
+solana-sdk = { version = "1.16.7" }
+solana-transaction-status = { version = "1.16.7" }
+
 
 [profile.release]
 overflow-checks = true
